@@ -6,8 +6,14 @@ app:
   # Set the build version ID to deploy for the "Build, deploy, and run" 
   # scenario. If the value is set to an empty string ("") the application
   # is not deployed.
-  # version: ""
-  
+  version: ""
+    # Enable mp health to retrieve Application status via health check 
+  # If application takes longer time than configured startupTimeout, the deployment would fail
+  # startupCheckInterval is the time interval at which startup probe would be checked
+  # checkInterval is the time interval at which readiness probe would be checked
+  startupTimeout: 5
+  startupCheckInterval: "150"
+  checkInterval: "10"
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   # maven:
