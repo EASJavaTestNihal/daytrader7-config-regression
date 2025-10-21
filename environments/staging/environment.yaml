@@ -12,8 +12,6 @@ app:
   # startupCheckInterval is the time interval at which startup probe would be checked
   # checkInterval is the time interval at which readiness probe would be checked
   startupTimeout: 5
-  startupCheckInterval: "150"
-  checkInterval: "10"
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   # maven:
