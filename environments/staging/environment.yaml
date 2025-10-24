@@ -11,7 +11,7 @@ app:
   # If application takes longer time than configured startupTimeout, the deployment would fail
   # startupCheckInterval is the time interval at which startup probe would be checked
   # checkInterval is the time interval at which readiness probe would be checked
-  startupTimeout: 1
+  startupTimeout: 5
   # Set the Maven coordinates of the Maven artifact to deploy for the 
   # "Deploy, and run" scenario.
   # maven:
